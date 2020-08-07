@@ -1,0 +1,130 @@
+.link-curent-item {
+  color: $akcent;
+}
+.page-header {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+}
+.logo {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: $primary-text-color;
+  font-family: "Raleway", "sans-serif";
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  margin-top: 24px;
+  margin-bottom: 25px;
+  padding: inherit;
+  width: 153px;
+  &:hover,
+  &:focus {
+    color: $akcent;
+  }
+}
+
+.logo-color {
+  color: $akcent;
+}
+
+.site-nav a {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+}
+
+.site-nav-contact {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  color: $secondary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.site-nav {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  margin-left: 84px;
+  margin-top: 32px;
+  padding: initial;
+  justify-content: space-between;
+  width: 294px;
+  letter-spacing: 0.02em;
+}
+.site-nav :hover,
+.site-nav :focus {
+  color: $akcent;
+}
+
+.button-icon-envelope {
+  fill: $secondary-text-color;
+  color: $secondary-text-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $akcent;
+    color: $akcent;
+  }
+}
+
+.button-text-contact {
+  padding-left: 6px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.button-icon-smartphone {
+  padding-left: 30px;
+  fill: $secondary-text-color;
+  color: $secondary-text-color;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $akcent;
+    color: $akcent;
+  }
+}
+
+.link-current {
+  position: relative;
+  color: $akcent;
+}
+
+.link-current::after {
+  content: "";
+  width: 100%;
+  background: $akcent;
+  border-radius: 2px;
+  height: 4px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
