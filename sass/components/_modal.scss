@@ -1,11 +1,5 @@
-.page {
-  background: $white-text-color;
-  color: #212121;
-  font-family: "roboto", sans-serif;
-}
 .backdrop {
   z-index: 100;
-  display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -48,7 +42,7 @@
   top: 0;
   right: 0;
   transform: translate(-8px, 8px);
-  display: flex;
+
   justify-content: center;
   align-items: center;
   width: 30px;
@@ -194,7 +188,7 @@
   width: 448px;
   margin-top: 20px;
   margin-bottom: 30px;
-  display: flex;
+
   align-items: center;
   text-align: center;
   font-size: 14px;

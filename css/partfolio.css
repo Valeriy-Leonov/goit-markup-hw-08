@@ -14,10 +14,8 @@ ul {
   text-decoration: none;
 }
 
-.page {
-  background: #ffffff;
-  color: #212121;
-  font-family: "roboto", sans-serif;
+body {
+  font-family: "Roboto";
 }
 
 .box-container-partfolio {
@@ -28,34 +26,33 @@ ul {
 }
 
 .line {
-  width: 1600px;
   border: 1px solid #ececec;
   margin: 0 auto;
   padding: 0 auto;
+}
+
+.header-position {
+  position: relative;
 }
 
 .link-curent-item {
   color: #2196f3;
 }
 
-.page-header {
-  width: 1200px;
+.container {
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  height: 80px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
-.nav {
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo {
@@ -66,15 +63,7 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #000000;
-  font-family: "Raleway", "sans-serif";
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  margin-top: 24px;
-  margin-bottom: 25px;
-  padding: inherit;
-  width: 153px;
+  font-family: "Raleway", sans-serif;
 }
 
 .logo:hover, .logo:focus {
@@ -99,11 +88,6 @@ ul {
 }
 
 .site-nav-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
@@ -116,18 +100,6 @@ ul {
   transition-property: all;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 84px;
-  margin-top: 32px;
-  padding: initial;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 294px;
   letter-spacing: 0.02em;
 }
 
@@ -163,7 +135,6 @@ ul {
 }
 
 .button-icon-smartphone {
-  padding-left: 30px;
   fill: #757575;
   color: #757575;
   -webkit-transition-property: all;
@@ -195,27 +166,41 @@ ul {
   left: 0px;
 }
 
+.menu-button {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  fill: #000000;
+}
+
+.menu-button:hover {
+  fill: #2196f3;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-close-menu {
+  display: block;
+  fill: black;
+}
+
+.menu-button .icon-close-menu {
+  display: none;
+}
+
+.page-header .nav-address {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 60px;
+  width: 100%;
+}
+
 .footer-container {
-  max-width: 1600px;
-  min-width: 1600px;
-  margin: 0 auto;
   background-color: #2f303a;
-}
-
-.section-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  max-width: 1600px;
-  padding-left: 215px;
-  padding-right: 215px;
-}
-
-.logo-footer-top {
-  margin-top: 60px;
-  width: 231px;
-  height: 132px;
 }
 
 .logo-footer {
@@ -226,7 +211,6 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
-  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -239,7 +223,6 @@ ul {
 }
 
 .logo-footer-color {
-  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
@@ -251,47 +234,27 @@ ul {
 
 .footer-white-title {
   color: #ffffff;
-  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  width: 231px;
 }
 
 .footer-text-title {
   color: #757575;
-  padding-top: 9px;
   font-size: 14px;
   line-height: 1.8;
 }
 
 .social-contact {
   color: #ffffff;
-  margin-left: 69px;
-  margin-top: 72px;
 }
 
 .footer-text-title {
   color: #757575;
-  padding-top: 9px;
   font-size: 14px;
   line-height: 1.8;
-}
-
-.list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 21px;
-  width: 206px;
-  height: 44px;
 }
 
 .button-icon-social-footer {
@@ -323,19 +286,7 @@ ul {
   background-color: #2196f3;
 }
 
-.newsletter-container {
-  margin-top: 72px;
-  margin-bottom: 94px;
-  width: 570px;
-  height: 86px;
-  margin-top: 72px;
-  margin-left: 94px;
-}
-
 .newsletter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -345,17 +296,11 @@ ul {
 }
 
 .newslater-email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  padding-top: 15px;
-  padding-left: 16px;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -375,48 +320,17 @@ ul {
   min-width: 130px;
   width: 200px;
   height: 50px;
-  margin-left: 370px;
   letter-spacing: 0.06em;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.newslater-telegram {
-  margin-top: 13px;
-  margin-left: 10px;
 }
 
 .box {
-  max-width: 1600px;
-  min-width: 1600px;
   margin: 0 auto;
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .flex-button-portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -484,9 +398,6 @@ button-second-partfolio:focus {
 }
 
 .flex-container-partfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }

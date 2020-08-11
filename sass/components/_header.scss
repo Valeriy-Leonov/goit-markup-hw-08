@@ -1,33 +1,30 @@
+.header-position {
+  position: relative;
+}
+
 .link-curent-item {
   color: $akcent;
 }
-.page-header {
-  width: 1200px;
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  height: 80px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
 }
 
-.nav {
+.header-container {
   display: flex;
+  align-items: center;
 }
+
 .logo {
   transition-property: all;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: $primary-text-color;
-  font-family: "Raleway", "sans-serif";
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  margin-top: 24px;
-  margin-bottom: 25px;
-  padding: inherit;
-  width: 153px;
+  font-family: "Raleway", sans-serif;
+
   &:hover,
   &:focus {
     color: $akcent;
@@ -49,9 +46,6 @@
 }
 
 .site-nav-contact {
-  display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
   color: $secondary-text-color;
   font-weight: 500;
   font-size: 14px;
@@ -62,13 +56,6 @@
 .site-nav {
   transition-property: all;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  margin-left: 84px;
-  margin-top: 32px;
-  padding: initial;
-  justify-content: space-between;
-  width: 294px;
   letter-spacing: 0.02em;
 }
 .site-nav :hover,
@@ -100,7 +87,6 @@
 }
 
 .button-icon-smartphone {
-  padding-left: 30px;
   fill: $secondary-text-color;
   color: $secondary-text-color;
   transition-property: all;
@@ -127,4 +113,33 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
+}
+
+.menu-button {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  fill: #000000;
+  &:hover {
+    fill: #2196f3;
+  }
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-button.is-open .icon-close-menu {
+  display: block;
+  fill: black;
+}
+.menu-button .icon-close-menu {
+  display: none;
+}
+.page-header .nav-address {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 60px;
+  width: 100%;
 }
